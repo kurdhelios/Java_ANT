@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Ant with Java Demo">
+
+	<!-- Running running -->
+	<target name="run" depends="compile">
+		<java classname="com.ant.code.Demo">
+			<classpath path="staging" />
+		</java>
+	</target>
+
+	<!-- Running compilling -->
+	<target name="compile">
+		<javac includeantruntime="false" srcdir="./src" destdir="staging" />
+	</target>
+
+</project>
